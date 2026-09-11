@@ -1,8 +1,4 @@
 public class Student {
-    public static void main(String[] args) {
-        System.out.print(studentID, );
-    }
-
     private int studentID;
     private String firstName;
     private String lastName;
@@ -59,11 +55,15 @@ public class Student {
         this.age = age;
     }
 
-    public int[] getGrades(int[] grades) {
+    public int[] getGrades() {
         return grades;
     }
 
     public void setGrades(int[] grades) {
         this.grades = grades;
+    }
+
+    public void print() {
+        System.out.println(getStudentID() + getFirstName() + getLastName() + getEmailAddress() + getAge() + getGrades());
     }
 }
