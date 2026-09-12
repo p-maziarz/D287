@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Student {
     private int studentID;
     private String firstName;
@@ -64,7 +66,6 @@ public class Student {
     }
 
     public void print() {
-        //push
-        System.out.println("Student ID: " + getStudentID() + "\t" + "First Name: " + getFirstName() + "\t" + "Last Name: " + getLastName() + "\t" + "Email: " + getEmailAddress() + "\t" + "Age: " + getAge() + "\t" + "Grades: " + getGrades());
+        System.out.println("Student ID: " + getStudentID() + "\t" + "First Name: " + getFirstName() + "\t" + "Last Name: " + getLastName() + "\t" + "Email: " + getEmailAddress() + "\t" + "Age: " + getAge() + "\t" + "Grades: " + Arrays.toString(getGrades()));
     }
 }
